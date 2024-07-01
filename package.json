@@ -1,0 +1,20 @@
+{
+  "name": "holbertonschool-web_back_end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "0-constants.js",
+  "scripts": {
+    "build": "babel src -d dist",
+    "dev": "babel-node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/node": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "cross-env": "^7.0.3"
+  }
+}
