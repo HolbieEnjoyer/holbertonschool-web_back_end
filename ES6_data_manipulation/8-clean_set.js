@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 export default function cleanSet(set, startString) {
-    if (!startString || startString === "") {
+    if (!startString || typeof(startString) != String || startString === "") {
         return "";
     }
 
