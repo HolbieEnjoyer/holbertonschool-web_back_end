@@ -1,10 +1,10 @@
 /* eslint-disable */
 
 export default function cleanSet(set, startString) {
-    if (startString === "") {
+    if (!startString || startString === "") {
         return "";
     }
-    
+
     let str = "";
     set.forEach((item) => {
         if (item.startsWith(startString)) {
