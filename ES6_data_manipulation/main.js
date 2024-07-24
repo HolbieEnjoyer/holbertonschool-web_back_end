@@ -1,3 +1,4 @@
-import setFromArray from "./6-set.js";
+import cleanSet from "./8-clean_set.js";
 
-console.log(setFromArray([12, 32, 15, 78, 98, 15]));
+console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 'bon'));
+console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), ''));

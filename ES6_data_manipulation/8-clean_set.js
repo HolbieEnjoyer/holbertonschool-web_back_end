@@ -1,11 +1,15 @@
 /* eslint-disable */
 
 export default function cleanSet(set, startString) {
-    const newSet = new Set();
+    if (startString === "") {
+        return "";
+    }
+    
+    let str = "";
     set.forEach((item) => {
         if (item.startsWith(startString)) {
-        newSet.add(item);
+            str += item.replace(startString, "") + "-";
         }
     });
-    return newSet;
+    return str.slice(0, -1);
 }
