@@ -2,7 +2,7 @@
 
 export default function updateUniqueItems(map) {
     if (!(map instanceof Map) || map === null) {
-        return;
+        throw new Error('Cannot process');
     }
 
     for (const [key, value] of map) {
