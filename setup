@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+	echo "No arguments provided!"
+	exit 1
+fi
+
+git pull
+mkdir $1
+cd $1
+cp ../README.md .
+cp ../commit .
+mkdir copywork
+cd copywork
+git clone https://github.com/nihad1213/holbertonschool-higher_level_programming
+cd holbertonschool-higher_level_programming
+cd $1
+mv * ../../../
+cd ../../../
+rm -rf copywork
+./commit
