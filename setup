@@ -12,7 +12,7 @@ cp ../README.md .
 cp ../commit .
 mkdir copywork
 cd copywork
-git clone https://github.com/nihad1213/holbertonschool-web_back_end
+git clone https://github.com/kamurano/holbertonschool-web_back_end
 cd holbertonschool-web_back_end
 cd $1
 mv * ../../../
